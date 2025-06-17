@@ -1,6 +1,5 @@
-import Link from "next/link";
 import Image from "next/image";
-import React from "react";
+import Link from "next/link";
 import Container from "./container";
 
 export default function Footer() {
@@ -69,23 +68,16 @@ export default function Footer() {
           <div className="">
             <div>Follow us</div>
             <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
-              {/* <a
-                href="https://twitter.com/web3templates"
-                target="_blank"
-                rel="noopener"
-              >
-                <span className="sr-only">Twitter</span>
-                <Twitter />
-              </a>
+
               <a
-                href="https://facebook.com/web3templates"
+                href="https://www.facebook.com/profile.php?id=61552669391757"
                 target="_blank"
                 rel="noopener"
               >
                 <span className="sr-only">Facebook</span>
                 <Facebook />
-              </a> */}
-              <a href="#" target="_blank" rel="noopener">
+              </a>
+              <a href="https://www.instagram.com/onlyface.official" target="_blank" rel="noopener">
                 <span className="sr-only">Instagram</span>
                 <Instagram />
               </a>
