@@ -1,3 +1,4 @@
+"use client";
 import { Disclosure, Transition } from "@headlessui/react";
 import { ChevronDown } from "lucide-react";
 import { useTranslations } from "next-intl";
