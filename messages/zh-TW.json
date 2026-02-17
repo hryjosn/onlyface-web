@@ -52,9 +52,192 @@
     "description": "體驗一種與真誠之人聯繫的新方式。立即下載 Onlyface。",
     "button": "免費開始使用"
   },
-  "Common": {
-    "delete_account": "如何刪除帳號？",
-    "privacy_policy": "隱私權政策",
-    "eula": "使用者授權合約"
+  "Footer": {
+    "product": "產品",
+    "features": "功能",
+    "safety": "安全",
+    "appStore": "App Store",
+    "playStore": "Play Store",
+    "support": "支援",
+    "helpCenter": "說明中心",
+    "privacy": "隱私權政策",
+    "eula": "使用者協定",
+    "deleteAccount": "刪除帳號",
+    "social": "社群媒體",
+    "description": "Onlyface 是一款革命性的應用程式，透過美貌與社群認可重新定義社交網絡。與真實的個人建立聯繫。",
+    "joinCommunity": "加入社群",
+    "downloadToday": "立即下載 Onlyface，體驗與眾不同。",
+    "rightsReserved": "保留所有權利。",
+    "madeWith": "精心製作",
+    "by": "由 Onlyface 小組"
+  },
+  "Privacy": {
+    "title": "隱私權政策",
+    "lastUpdated": "最後更新：2023年10月02日",
+    "intro": "本隱私權政策說明了當您使用服務時，我們收集、使用和披露您資訊的政策和程序，並告知您的隱私權以及法律如何保護您。我們使用您的個人資料來提供和改進服務。透過使用服務，即表示您同意按照本隱私權政策收集和使用資訊。",
+    "interpretation": "解釋與定義",
+    "interpretationH3": "解釋",
+    "interpretationDesc": "首字母大寫的單詞在以下條件下具有定義的含義。無論是以單數還是複數形式出現，以下定義應具有相同的含義。",
+    "definitions": "定義",
+    "definitionsIntro": "就本隱私權政策而言：",
+    "account": "帳號是指為您訪問我們的服務或我們服務的部分內容而創建的唯一帳號。",
+    "affiliate": "關聯公司是指控制一方、受一方控制或與一方共同受控制的實體。",
+    "application": "應用程式是指由公司提供的軟體程式 Onlyface。",
+    "company": "公司是指 Onlyface。",
+    "country": "國家是指：台灣",
+    "device": "設備是指任何可以訪問服務的設備。",
+    "personalData": "個人資料是與已識別或可識別的個人有關的任何資訊。",
+    "service": "服務是指應用程式。",
+    "usageData": "使用數據是指自動收集的數據，無論是透過使用服務產生的，還是來自服務基礎設施本身。",
+    "collecting": "收集和使用您的個人資料",
+    "dataTypes": "收集的數據類型",
+    "personalDataTitle": "個人資料",
+    "personalDataIntro": "在使用我們的服務時，我們可能會要求您向我們提供某些可用於聯絡或識別您的個人身份資訊。個人身份資訊可能包括：",
+    "email": "電子郵件地址",
+    "name": "名字和姓氏",
+    "phone": "電話號碼",
+    "usageDataTitle": "使用數據",
+    "useOfData": "您的個人資料之用途",
+    "useOfDataIntro": "公司可能將個人資料用於以下目的：",
+    "provideMaintain": "提供和維護我們的服務",
+    "manageAccount": "管理您的帳號",
+    "performanceContract": "履行合約",
+    "contactYou": "聯絡您",
+    "manageRequests": "管理您的請求",
+    "security": "您的個人資料之安全",
+    "securityDesc": "您的個人資料的安全對我們非常重要，但請記住，沒有任何一種透過互聯網傳輸或電子存儲的方法是 100% 安全的。",
+    "contact": "聯絡我們",
+    "contactDesc": "如果您對本隱私權政策有任何疑問，可以聯絡我們：",
+    "byEmail": "透過電子郵件：support@onlyface.app"
+  },
+  "EULA": {
+    "title": "使用者授權合約",
+    "lastUpdated": "最後更新：2023年10月20日",
+    "intro": "本終端用戶許可協議（「協議」）是您與 Onlyface（「公司」、「我們」、「我們的」或「本公司」）之間的法律協議。",
+    "licenseGrant": "1. 授權許可",
+    "licenseGrantDesc": "根據本協議的條款，公司授予您一項個人的、非獨佔的、不可轉讓的、不可轉授權的、可撤銷的許可，供您在您擁有或控制的設備上下載、安裝和使用本應用程式。",
+    "restrictions": "2. 限制",
+    "restrictionsIntro": "您同意不，且不允許他人：",
+    "restrict1": "許可、銷售、出租、租賃、轉讓、分發、傳輸、託管、外包、披露或以其他方式將應用程式用於商業開發。",
+    "restrict2": "修改、製作應用程式任何部分的衍生作品、拆解、解密、反向編譯或反向工程。",
+    "restrict3": "刪除、更改或遮蔽公司或其關聯公司、夥伴、供應商或應用程式許可方的任何所有權聲明（包括任何版權或商標聲明）。",
+    "property": "3. 智慧財產權",
+    "propertyDesc": "應用程式，包括但不限於所有版權、專利、商標、商業秘密和其他智慧財產權，現在是且將來仍是公司的唯一和排他性財產。",
+    "content": "4. 您的內容",
+    "contentDesc": "您對您在 Onlyface 上發佈的內容負責。您授予我們一項非獨佔的、免版稅的、可轉讓的、可轉授權的、全球範圍內的許可，以便在與應用程式相關的情況下使用、顯示、複製和分發您的內容。",
+    "termination": "5. 終止",
+    "terminationDesc": "本協議在您或公司終止之前一直有效。公司可以自行決定隨時以任何理由或無理由暫停或終止本協議，無論是否事先通知。",
+    "liability": "6. 責任限制",
+    "liabilityDesc": "在適用法律允許的最大範圍內，在任何情況下，公司或其供應商均不對任何特殊的、偶然的、間接的或後果性的損害承擔任何責任。",
+    "law": "7. 適用法律",
+    "lawDesc": "台灣法律（不包括其衝突法規則）應管轄本協議及您對應用程式的使用。",
+    "contact": "8. 聯絡資訊",
+    "contactDesc": "如果您對本協議有任何疑問，請透過 support@onlyface.app 與我們聯絡。"
+  },
+  "Safety": {
+    "title": "CSAE 預防政策",
+    "description": "我們的應用程式致力於預防兒童性虐待與剝削（CSAE）。",
+    "subtitle": "我們對安全與保護的承諾。",
+    "introTitle": "簡介",
+    "introDesc": "我們的應用程式致力於預防兒童性虐待與剝削（CSAE）。我們執行嚴格的政策並採取先進的措施，以確保所有用戶的安全環境。",
+    "prohibitedTitle": "禁止行為",
+    "prohibitedIntro": "我們嚴格禁止以下行為：",
+    "prohibited1": "任何形式的兒童性虐待材料（CSAM）",
+    "prohibited2": "誘導或脅迫未成年人從事不當活動",
+    "prohibited3": "對未成年人進行性勒索或恐嚇",
+    "prohibited4": "任何促成或宣傳兒童拐賣的企圖",
+    "prohibited5": "分享或分發涉及未成年人的剝削性內容",
+    "measuresTitle": "預防措施",
+    "measure1Title": "內容審核",
+    "measure1Desc": "我們的 AI 驅動和人工審查系統會主動掃描並移除與 CSAE 相關的內容。",
+    "measure2Title": "用戶驗證",
+    "measure2Desc": "身份驗證流程有助於防止創建用於非法活動的虛假帳號。",
+    "measure3Title": "年齡限制",
+    "measure3Desc": "未成年人被限制訪問成人內容，並執行年齡驗證步驟。",
+    "measure4Title": "即時監測",
+    "measure4Desc": "我們實施自動監測工具以檢測並標記可疑活動。",
+    "measure5Title": "嚴格的報告系統",
+    "measure5Desc": "用戶可以透過我們的應用內報告系統檢舉可疑行為。",
+    "measure6Title": "家長控制",
+    "measure6Desc": "我們為家長提供工具來監控和限制其子女在平台上的活動。",
+    "enforcementTitle": "報告與執行",
+    "enforcement1Title": "立即行動",
+    "enforcement1Desc": "被檢舉的 CSAE 違規行為將立即受到審查並採取行動。",
+    "enforcement2Title": "與當局合作",
+    "enforcement2Desc": "我們與執法機構和兒童保護組織密切合作。",
+    "enforcement3Title": "永久封鎖帳號",
+    "enforcement3Desc": "用戶發現違反 CSAE 政策的用戶將面臨不可撤銷的帳號封鎖。",
+    "enforcement4Title": "法律行動",
+    "enforcement4Desc": "我們對涉及 CSAE 活動的個人採取法律措施。",
+    "contactTitle": "聯絡與支援",
+    "contactDesc": "如果您遇到任何與 CSAE 相關的內容或可疑活動，請透過我們的應用內檢舉功能報告，或透過 support@onlyface.app 聯絡我們的支援團隊。"
+  },
+  "DeleteAccount": {
+    "title": "如何刪除我的帳號？",
+    "subtitle": "請按照以下步驟完成帳號刪除流程。",
+    "metaTitle": "如何刪除我的帳號",
+    "metaDesc": "刪除 Onlyface 帳號的逐步指南。",
+    "step1": {
+      "title": "步驟 1",
+      "desc": "點擊右上角展開按鈕。"
+    },
+    "step2": {
+      "title": "點擊設置",
+      "desc": "點擊下方設置按鈕。"
+    },
+    "step3": {
+      "title": "點擊刪除帳號",
+      "desc": "點擊下方「刪除帳號」紅色文字。"
+    },
+    "step4": {
+      "title": "確認刪除",
+      "desc": "點擊「是」後，您的帳號將暫時停用。30天後，您的帳號及相關活動將自動刪除。"
+    },
+    "helpTitle": "需要更多幫助嗎？",
+    "helpDesc": "如果您在刪除過程中遇到任何問題，請透過 support@onlyface.app 聯絡我們的支援團隊。我們隨時為您提供協助。"
+  },
+  "FAQItems": [
+    {
+      "question": "Onlyface 是如何運作的？",
+      "answer": "Onlyface 是一個基於外貌建立聯繫的社交應用程式。註冊後，用戶需上傳一張自拍照並進入待定狀態。若要成為正式會員，必須獲得超過 1/3 的現有用戶投票認可。"
+    },
+    {
+      "question": "「待定狀態」的目的是什麼？",
+      "answer": "待定狀態讓現有用戶可以對新成員的照片進行投票，確保社群維持一定的美感與吸引力標準。"
+    },
+    {
+      "question": "我應該上傳什麼樣的照片作為個人資料？",
+      "answer": "選擇一張能準確展現您外貌的高品質自拍照。確保光線充足，並避免使用濾鏡或過度修圖的照片。"
+    },
+    {
+      "question": "獲得社群認可通常需要多久？",
+      "answer": "審核過程取決於用戶數量及他們的投票速度。時間長短可能有所不同，但我們致力於確保流程公平且及時。"
+    },
+    {
+      "question": "如果我沒有獲得足夠的認可票數會怎樣？",
+      "answer": "如果您未獲得足夠票數，您將保持在待定狀態。您可以繼續與社群互動並再次嘗試。"
+    }
+  ],
+  "TestimonialItems": [
+    {
+      "content": "Onlyface 完全改變了我與人聯繫的方式。這個社群非常支持彼此且十分真實。",
+      "author": "Sarah Steiner",
+      "title": "活躍成員"
+    },
+    {
+      "content": "我喜歡這個認可系統！它讓社群同時感到高端且安全。",
+      "author": "Dylan Ambrose",
+      "title": "專業用戶"
+    },
+    {
+      "content": "這是我多年來用過最好的社交 App。簡約、美麗，而且這裡的人都是真實存在的。",
+      "author": "Gabrielle Winn",
+      "title": "驗證用戶"
+    }
+  ],
+  "Video": {
+    "title": "觀看故事",
+    "srPlay": "播放影片",
+    "videoTitle": "Onlyface 簡報影片"
   }
 }

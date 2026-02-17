@@ -1,5 +1,6 @@
 import { Quote } from "lucide-react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import userOneImg from "../public/img/user1.jpg";
 import userTwoImg from "../public/img/user2.jpg";
 import userThreeImg from "../public/img/user3.jpg";
@@ -7,26 +8,16 @@ import { Card, CardContent } from "./ui/card";
 import { Container } from "./ui/container";
 
 const Testimonials = () => {
+  const t = useTranslations("TestimonialItems");
+
   const testimonials = [
     {
-      content:
-        "Onlyface completely changed how I connect with people. The community is so supportive and authentic.",
-      author: "Sarah Steiner",
-      title: "Active Member",
       image: userOneImg,
     },
     {
-      content:
-        "I love the approval system! It makes the community feel exclusive and safe at the same time.",
-      author: "Dylan Ambrose",
-      title: "Premium User",
       image: userTwoImg,
     },
     {
-      content:
-        "The best social app I've used in years. Simple, beautiful, and the people are actually real.",
-      author: "Gabrielle Winn",
-      title: "Verified User",
       image: userThreeImg,
     },
   ];
@@ -42,13 +33,13 @@ const Testimonials = () => {
             <CardContent className="space-y-6 p-8">
               <Quote className="h-10 w-10 text-primary/20 transition-colors group-hover:text-primary/40" />
               <p className="font-medium text-foreground text-xl italic leading-relaxed">
-                &ldquo;{testimonial.content}&rdquo;
+                &ldquo;{t(`${index}.content`)}&rdquo;
               </p>
 
               <div className="flex items-center space-x-4 border-border/50 border-t pt-4">
                 <div className="h-14 w-14 flex-shrink-0 overflow-hidden rounded-full ring-2 ring-primary/10">
                   <Image
-                    alt={testimonial.author}
+                    alt={t(`${index}.author`)}
                     className="h-full w-full object-cover"
                     height={56}
                     placeholder="blur"
@@ -58,10 +49,10 @@ const Testimonials = () => {
                 </div>
                 <div>
                   <div className="font-bold text-foreground text-lg leading-tight">
-                    {testimonial.author}
+                    {t(`${index}.author`)}
                   </div>
                   <div className="text-muted-foreground text-sm">
-                    {testimonial.title}
+                    {t(`${index}.title`)}
                   </div>
                 </div>
               </div>

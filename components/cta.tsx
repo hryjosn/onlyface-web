@@ -1,9 +1,9 @@
-import { Button } from "./ui/button"
-import { Container } from "./ui/container"
-import { useTranslations } from "next-intl"
+import { useTranslations } from "next-intl";
+import { Button } from "./ui/button";
+import { Container } from "./ui/container";
 
 const Cta = () => {
-  const t = useTranslations("CTA")
+  const t = useTranslations("CTA");
 
   return (
     <Container className="py-12">
@@ -31,7 +31,7 @@ const Cta = () => {
         <div className="absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-primary-foreground/5 blur-3xl" />
       </div>
     </Container>
-  )
-}
+  );
+};
 
-export default Cta
+export default Cta;

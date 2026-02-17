@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import Benefits from "../../components/benefits";
 import Cta from "../../components/cta";
 import {
@@ -13,7 +14,6 @@ import PopupWidget from "../../components/popupWidget";
 import Testimonials from "../../components/testimonials";
 import { SectionTitle } from "../../components/ui/section-title";
 import Video from "../../components/video";
-import { useTranslations } from "next-intl";
 
 export default function Home() {
   const tBenefits = useTranslations("Benefits");
@@ -36,12 +36,12 @@ export default function Home() {
           }}
         />
         <Benefits
-          imgPos="right"
           data={{
             ...homeContent2,
             title: tHomeContent("2.title"),
             desc: tHomeContent("2.desc"),
           }}
+          imgPos="right"
         />
         <Benefits
           data={{
@@ -52,10 +52,7 @@ export default function Home() {
         />
       </div>
 
-      <SectionTitle
-        pretitle={tBenefits("pretitle")}
-        title={tBenefits("title")}
-      >
+      <SectionTitle pretitle={tBenefits("pretitle")} title={tBenefits("title")}>
         {tBenefits("description")}
       </SectionTitle>
 
@@ -71,7 +68,10 @@ export default function Home() {
       </SectionTitle>
       <Video />
 
-      <SectionTitle pretitle={tTestimonials("pretitle")} title={tTestimonials("title")}>
+      <SectionTitle
+        pretitle={tTestimonials("pretitle")}
+        title={tTestimonials("title")}
+      >
         {tTestimonials("description")}
       </SectionTitle>
       <Testimonials />

@@ -1,38 +1,40 @@
 import { Facebook, Heart, Instagram } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { Container } from "./ui/container";
 
 export default function Footer() {
+  const t = useTranslations("Footer");
   const currentYear = new Date().getFullYear();
 
   const sections = [
     {
-      title: "Product",
+      title: t("product"),
       links: [
-        { name: "Features", href: "/#features" },
-        { name: "Safety", href: "/csae-safety-standards" },
+        { name: t("features"), href: "/#features" },
+        { name: t("safety"), href: "/csae-safety-standards" },
         {
-          name: "App Store",
+          name: t("appStore"),
           href: "https://apps.apple.com/pl/app/onlyface/id6467753501",
         },
         {
-          name: "Play Store",
+          name: t("playStore"),
           href: "https://play.google.com/store/apps/details?id=com.onlyface",
         },
       ],
     },
     {
-      title: "Support",
+      title: t("support"),
       links: [
-        { name: "Help Center", href: "/delete-account-tutorial" },
-        { name: "Privacy Policy", href: "/privacy" },
-        { name: "EULA", href: "/eula" },
-        { name: "Delete Account", href: "/delete-account-tutorial" },
+        { name: t("helpCenter"), href: "/delete-account-tutorial" },
+        { name: t("privacy"), href: "/privacy" },
+        { name: t("eula"), href: "/eula" },
+        { name: t("deleteAccount"), href: "/delete-account-tutorial" },
       ],
     },
     {
-      title: "Social",
+      title: t("social"),
       links: [
         {
           name: "Instagram",
@@ -69,9 +71,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="max-w-xs text-muted-foreground text-sm leading-relaxed">
-              Onlyface is a revolutionary app that redefines social networking
-              through beauty and community approval. Connect with genuine
-              individuals.
+              {t("description")}
             </p>
             <div className="flex space-x-4">
               {sections[2].links.map((social) => (
@@ -113,10 +113,10 @@ export default function Footer() {
           {/* Newsletter/CTA Column */}
           <div className="space-y-6">
             <h4 className="font-bold text-foreground text-sm uppercase tracking-wider">
-              Join the community
+              {t("joinCommunity")}
             </h4>
             <p className="text-muted-foreground text-sm">
-              Download Onlyface today and experience the difference.
+              {t("downloadToday")}
             </p>
             <div className="flex flex-col space-y-4">
               <Link
@@ -152,12 +152,12 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-16 flex flex-col items-center justify-between space-y-4 border-border border-t pt-8 md:flex-row md:space-y-0">
           <p className="text-muted-foreground text-sm">
-            © {currentYear} Onlyface. All rights reserved.
+            © {currentYear} Onlyface. {t("rightsReserved")}
           </p>
           <div className="flex items-center space-x-1 text-muted-foreground text-sm">
-            <span>Made with</span>
+            <span>{t("madeWith")}</span>
             <Heart className="h-4 w-4 fill-primary text-primary" />
-            <span>by Onlyface Team</span>
+            <span>{t("by")}</span>
           </div>
         </div>
       </Container>

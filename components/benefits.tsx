@@ -1,3 +1,4 @@
+import type { StaticImageData } from "next/image";
 import Image from "next/image";
 import type React from "react";
 import { cn } from "@/lib/utils";
@@ -7,7 +8,7 @@ interface BenefitsProps {
   data: {
     title: string;
     desc: string;
-    image: any;
+    image: string | StaticImageData;
     bullets?: {
       title: string;
       desc: string;

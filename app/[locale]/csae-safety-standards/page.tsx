@@ -1,90 +1,79 @@
 import type { Metadata } from "next";
+import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { ContentLayout } from "../../../components/ui/content-layout";
 
-export const metadata: Metadata = {
-  title: "CSAE Prevention Policies",
-  description:
-    "Our application is dedicated to preventing Child Sexual Abuse and Exploitation (CSAE).",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Safety" });
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 
 function CSAEPreventionPolicies() {
-  return (
-    <ContentLayout
-      subtitle="Our commitment to safety and protection."
-      title="CSAE Prevention Policies"
-    >
-      <h2>Introduction</h2>
-      <p>
-        Our application is dedicated to preventing Child Sexual Abuse and
-        Exploitation (CSAE). We enforce strict policies and employ advanced
-        measures to ensure a safe environment for all users.
-      </p>
+  const t = useTranslations("Safety");
 
-      <h2>Prohibited Activities</h2>
-      <p>We strictly prohibit the following activities:</p>
+  return (
+    <ContentLayout subtitle={t("subtitle")} title={t("title")}>
+      <h2>{t("introTitle")}</h2>
+      <p>{t("introDesc")}</p>
+
+      <h2>{t("prohibitedTitle")}</h2>
+      <p>{t("prohibitedIntro")}</p>
       <ul>
-        <li>Any form of child sexual abuse material (CSAM)</li>
-        <li>Grooming or coercing minors into inappropriate activities</li>
-        <li>Sextortion or blackmailing minors</li>
-        <li>Any attempt to facilitate or promote child trafficking</li>
-        <li>Sharing or distributing exploitative content involving minors</li>
+        <li>{t("prohibited1")}</li>
+        <li>{t("prohibited2")}</li>
+        <li>{t("prohibited3")}</li>
+        <li>{t("prohibited4")}</li>
+        <li>{t("prohibited5")}</li>
       </ul>
 
-      <h2>Prevention Measures</h2>
+      <h2>{t("measuresTitle")}</h2>
       <ol>
         <li>
-          <strong>Content Moderation</strong>: Our AI-powered and human review
-          systems actively scan and remove CSAE-related content.
+          <strong>{t("measure1Title")}</strong>: {t("measure1Desc")}
         </li>
         <li>
-          <strong>User Verification</strong>: Identity verification processes
-          help prevent the creation of fake accounts used for illicit
-          activities.
+          <strong>{t("measure2Title")}</strong>: {t("measure2Desc")}
         </li>
         <li>
-          <strong>Age Restrictions</strong>: Minors are restricted from
-          accessing adult content, and age verification steps are enforced.
+          <strong>{t("measure3Title")}</strong>: {t("measure3Desc")}
         </li>
         <li>
-          <strong>Real-Time Monitoring</strong>: We implement automated
-          monitoring tools to detect and flag suspicious activities.
+          <strong>{t("measure4Title")}</strong>: {t("measure4Desc")}
         </li>
         <li>
-          <strong>Strict Reporting System</strong>: Users can report suspicious
-          behavior through our in-app reporting system.
+          <strong>{t("measure5Title")}</strong>: {t("measure5Desc")}
         </li>
         <li>
-          <strong>Parental Controls</strong>: We provide parents with tools to
-          monitor and restrict their child's activities on the platform.
+          <strong>{t("measure6Title")}</strong>: {t("measure6Desc")}
         </li>
       </ol>
 
-      <h2>Reporting and Enforcement</h2>
+      <h2>{t("enforcementTitle")}</h2>
       <ul>
         <li>
-          <strong>Immediate Action</strong>: Reported CSAE violations are
-          reviewed and acted upon immediately.
+          <strong>{t("enforcement1Title")}</strong>: {t("enforcement1Desc")}
         </li>
         <li>
-          <strong>Collaboration with Authorities</strong>: We work closely with
-          law enforcement agencies and child protection organizations.
+          <strong>{t("enforcement2Title")}</strong>: {t("enforcement2Desc")}
         </li>
         <li>
-          <strong>Permanent Account Bans</strong>: Users found violating CSAE
-          policies will face an irreversible account ban.
+          <strong>{t("enforcement3Title")}</strong>: {t("enforcement3Desc")}
         </li>
         <li>
-          <strong>Legal Action</strong>: We take legal measures against
-          individuals involved in CSAE activities.
+          <strong>{t("enforcement4Title")}</strong>: {t("enforcement4Desc")}
         </li>
       </ul>
 
-      <h2>Contact and Support</h2>
-      <p>
-        If you encounter any CSAE-related content or suspicious activity, please
-        report it through our in-app reporting feature or contact our support
-        team at support@onlyface.app.
-      </p>
+      <h2>{t("contactTitle")}</h2>
+      <p>{t("contactDesc")}</p>
     </ContentLayout>
   );
 }
