@@ -1,0 +1,60 @@
+{
+  "Navbar": {
+    "privacy": "Privacy",
+    "eula": "EULA",
+    "safety": "Safety",
+    "support": "Support"
+  },
+  "Hero": {
+    "welcome": "Welcome to Onlyface",
+    "title1": "Where Beauty Meets",
+    "title2": "Approval!",
+    "description": "Connect with like-minded individuals in a community that appreciates beauty and authenticity. Experience social media redesigned for the modern age.",
+    "android": "Android Download",
+    "ios": "iOS Download"
+  },
+  "Benefits": {
+    "pretitle": "Onlyface Benefits",
+    "title": "Why should you use this app?",
+    "description": "Unlock a world of authentic connections on Onlyface, where your unique beauty opens the door to meaningful relationships. Our exclusive approval system ensures you join a network of individuals who appreciate genuine connections."
+  },
+  "FAQ": {
+    "pretitle": "FAQ",
+    "title": "Frequently Asked Questions",
+    "description": "Find answers to common questions about Onlyface and how our community works."
+  },
+  "Showcase": {
+    "pretitle": "Showcase",
+    "title": "See Onlyface in action",
+    "description": "Watch our presentation video to understand how Onlyface is redefining social connections."
+  },
+  "Testimonials": {
+    "pretitle": "Testimonials",
+    "title": "What our community says",
+    "description": "Join thousands of satisfied users who have found authentic connections on Onlyface."
+  },
+  "HomeContent": {
+    "1": {
+      "title": "Member Approval System",
+      "desc": "Efficient Validation: Our Member Approval System simplifies the vetting process, enabling verified members to review and authorize new applicants, ensuring a trusted and secure community"
+    },
+    "2": {
+      "title": "Share Your Own Story",
+      "desc": "Narrate Your Experience: With 'Share Your Own Story,' you can craft and express your personal experiences, connecting with others through compelling narratives."
+    },
+    "3": {
+      "title": "Selected Photo Network",
+      "desc": "Curate and Share: Our platform features a selected photo network, allowing users to showcase and discover exceptional images, fostering a vibrant community of visual storytelling and inspiration."
+    }
+  },
+  "CTA": {
+    "title": "Ready to join the community?",
+    "description": "Experience a new way of connecting with authentic people. Download Onlyface now.",
+    "button": "Get Started Free"
+  },
+  "Common": {
+    "delete_account": "How to delete account?",
+    "privacy_policy": "Privacy Policy",
+    "eula": "End User License Agreement"
+  }
+}

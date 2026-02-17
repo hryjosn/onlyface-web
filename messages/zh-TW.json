@@ -1,0 +1,60 @@
+{
+  "Navbar": {
+    "privacy": "隱私權",
+    "eula": "使用者協定",
+    "safety": "安全標準",
+    "support": "支援中心"
+  },
+  "Hero": {
+    "welcome": "歡迎來到 Onlyface",
+    "title1": "美貌與",
+    "title2": "認可的相遇！",
+    "description": "在欣賞美與真實的社群中與志趣相投的人聯繫。體驗為現代重新設計的社交媒體。",
+    "android": "Android 下載",
+    "ios": "iOS 下載"
+  },
+  "Benefits": {
+    "pretitle": "Onlyface 優勢",
+    "title": "為什麼要使用這個 App？",
+    "description": "在 Onlyface 開啟真實聯繫的世界，您獨特的美貌將為您開啟有意義關係的大門。我們獨有的審核系統確保您加入一個欣賞真實聯繫的網絡。"
+  },
+  "FAQ": {
+    "pretitle": "常問問題",
+    "title": "常見問題解答",
+    "description": "尋找關於 Onlyface 以及我們社群運作方式的常見問題答案。"
+  },
+  "Showcase": {
+    "pretitle": "展示",
+    "title": "看看 Onlyface 的實際運作",
+    "description": "觀看我們的演示影片，了解 Onlyface 如何重新定義社交聯繫。"
+  },
+  "Testimonials": {
+    "pretitle": "推薦",
+    "title": "我們的社群怎麼說",
+    "description": "加入成千上萬在 Onlyface 找到真實聯繫的滿意用戶。"
+  },
+  "HomeContent": {
+    "1": {
+      "title": "會員審核系統",
+      "desc": "高效驗證：我們的會員審核系統簡化了審查流程，使經過驗證的會員能夠審核並授權新的申請人，確保一個值得信賴且安全的社群。"
+    },
+    "2": {
+      "title": "分享您自己的故事",
+      "desc": "敘述您的體驗：通過「分享您自己的故事」，您可以創作並表達您的個人經歷，通過引人入勝的敘事與他人建立聯繫。"
+    },
+    "3": {
+      "title": "精選照片網絡",
+      "desc": "策劃與分享：我們的平台設有精選照片網絡，允許用戶展示和發現卓越的圖像，營造一個充滿活力的視覺故事和靈感的社群。"
+    }
+  },
+  "CTA": {
+    "title": "準備好加入社群了嗎？",
+    "description": "體驗一種與真誠之人聯繫的新方式。立即下載 Onlyface。",
+    "button": "免費開始使用"
+  },
+  "Common": {
+    "delete_account": "如何刪除帳號？",
+    "privacy_policy": "隱私權政策",
+    "eula": "使用者授權合約"
+  }
+}

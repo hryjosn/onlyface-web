@@ -1,6 +1,6 @@
-import { cn } from "@/lib/utils"
-import { cva, type VariantProps } from "class-variance-authority"
-import * as React from "react"
+import { cva, type VariantProps } from "class-variance-authority";
+import * as React from "react";
+import { cn } from "@/lib/utils";
 
 const containerVariants = cva("mx-auto w-full px-4 sm:px-6 lg:px-8", {
   variants: {
@@ -16,7 +16,7 @@ const containerVariants = cva("mx-auto w-full px-4 sm:px-6 lg:px-8", {
   defaultVariants: {
     size: "xl",
   },
-})
+});
 
 export interface ContainerProps
   extends React.HTMLAttributes<HTMLDivElement>,
@@ -30,9 +30,9 @@ const Container = React.forwardRef<HTMLDivElement, ContainerProps>(
         ref={ref}
         {...props}
       />
-    )
+    );
   }
-)
-Container.displayName = "Container"
+);
+Container.displayName = "Container";
 
-export { Container, containerVariants }
+export { Container, containerVariants };

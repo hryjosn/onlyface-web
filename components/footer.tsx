@@ -1,10 +1,10 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Container } from "./ui/container"
-import { Facebook, Instagram, Twitter, Linkedin, Heart } from "lucide-react"
+import { Facebook, Heart, Instagram } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { Container } from "./ui/container";
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   const sections = [
     {
@@ -12,8 +12,14 @@ export default function Footer() {
       links: [
         { name: "Features", href: "/#features" },
         { name: "Safety", href: "/csae-safety-standards" },
-        { name: "App Store", href: "https://apps.apple.com/pl/app/onlyface/id6467753501" },
-        { name: "Play Store", href: "https://play.google.com/store/apps/details?id=com.onlyface" },
+        {
+          name: "App Store",
+          href: "https://apps.apple.com/pl/app/onlyface/id6467753501",
+        },
+        {
+          name: "Play Store",
+          href: "https://play.google.com/store/apps/details?id=com.onlyface",
+        },
       ],
     },
     {
@@ -28,46 +34,56 @@ export default function Footer() {
     {
       title: "Social",
       links: [
-        { name: "Instagram", href: "https://www.instagram.com/onlyface.official", icon: Instagram },
-        { name: "Facebook", href: "https://www.facebook.com/profile.php?id=61552669391757", icon: Facebook },
+        {
+          name: "Instagram",
+          href: "https://www.instagram.com/onlyface.official",
+          icon: Instagram,
+        },
+        {
+          name: "Facebook",
+          href: "https://www.facebook.com/profile.php?id=61552669391757",
+          icon: Facebook,
+        },
       ],
     },
-  ]
+  ];
 
   return (
-    <footer className="bg-background border-t border-border mt-12">
+    <footer className="mt-12 border-border border-t bg-background">
       <Container className="py-12 lg:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
           {/* Brand Column */}
           <div className="space-y-6">
-            <Link href="/" className="flex items-center gap-2 group">
-              <div className="relative w-10 h-10 overflow-hidden rounded-xl bg-primary/10 flex items-center justify-center">
+            <Link className="group flex items-center gap-2" href="/">
+              <div className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl bg-primary/10">
                 <Image
-                  src="/img/logo.png"
                   alt="Onlyface Logo"
-                  width={32}
+                  className="h-8 w-8 object-contain"
                   height={32}
-                  className="w-8 h-8 object-contain"
+                  src="/img/logo.png"
+                  width={32}
                 />
               </div>
-              <span className="text-xl font-bold tracking-tight text-foreground">
+              <span className="font-bold text-foreground text-xl tracking-tight">
                 Only<span className="text-primary">face</span>
               </span>
             </Link>
-            <p className="text-muted-foreground text-sm max-w-xs leading-relaxed">
-              Onlyface is a revolutionary app that redefines social networking through beauty and community approval. Connect with genuine individuals.
+            <p className="max-w-xs text-muted-foreground text-sm leading-relaxed">
+              Onlyface is a revolutionary app that redefines social networking
+              through beauty and community approval. Connect with genuine
+              individuals.
             </p>
             <div className="flex space-x-4">
               {sections[2].links.map((social) => (
                 <a
-                  key={social.name}
+                  className="text-muted-foreground transition-colors hover:text-primary"
                   href={social.href}
-                  target="_blank"
+                  key={social.name}
                   rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  target="_blank"
                 >
                   <span className="sr-only">{social.name}</span>
-                  {social.icon && <social.icon className="w-5 h-5" />}
+                  {social.icon && <social.icon className="h-5 w-5" />}
                 </a>
               ))}
             </div>
@@ -75,16 +91,16 @@ export default function Footer() {
 
           {/* Links Columns */}
           {sections.slice(0, 2).map((section) => (
-            <div key={section.title} className="space-y-6">
-              <h4 className="text-sm font-bold tracking-wider text-foreground uppercase">
+            <div className="space-y-6" key={section.title}>
+              <h4 className="font-bold text-foreground text-sm uppercase tracking-wider">
                 {section.title}
               </h4>
               <ul className="space-y-4">
                 {section.links.map((link) => (
                   <li key={link.name}>
                     <Link
+                      className="text-muted-foreground text-sm transition-colors hover:text-primary"
                       href={link.href}
-                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
                     >
                       {link.name}
                     </Link>
@@ -96,37 +112,37 @@ export default function Footer() {
 
           {/* Newsletter/CTA Column */}
           <div className="space-y-6">
-            <h4 className="text-sm font-bold tracking-wider text-foreground uppercase">
+            <h4 className="font-bold text-foreground text-sm uppercase tracking-wider">
               Join the community
             </h4>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-muted-foreground text-sm">
               Download Onlyface today and experience the difference.
             </p>
             <div className="flex flex-col space-y-4">
               <Link
+                className="transition-transform hover:scale-105 active:scale-95"
                 href="https://apps.apple.com/pl/app/onlyface/id6467753501"
                 target="_blank"
-                className="transition-transform hover:scale-105 active:scale-95"
               >
                 <Image
-                  src="https://image.onlyface.app/App-Store-Icon-new.png"
-                  width={150}
-                  height={45}
                   alt="Download on the App Store"
                   className="h-10 w-auto"
+                  height={45}
+                  src="https://image.onlyface.app/App-Store-Icon-new.png"
+                  width={150}
                 />
               </Link>
               <Link
+                className="transition-transform hover:scale-105 active:scale-95"
                 href="https://play.google.com/store/apps/details?id=com.onlyface"
                 target="_blank"
-                className="transition-transform hover:scale-105 active:scale-95"
               >
                 <Image
-                  src="https://image.onlyface.app/Google-Play-Icon.png"
-                  width={150}
-                  height={45}
                   alt="Get it on Google Play"
                   className="h-10 w-auto"
+                  height={45}
+                  src="https://image.onlyface.app/Google-Play-Icon.png"
+                  width={150}
                 />
               </Link>
             </div>
@@ -134,17 +150,17 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <p className="text-sm text-muted-foreground">
+        <div className="mt-16 flex flex-col items-center justify-between space-y-4 border-border border-t pt-8 md:flex-row md:space-y-0">
+          <p className="text-muted-foreground text-sm">
             © {currentYear} Onlyface. All rights reserved.
           </p>
-          <div className="flex items-center space-x-1 text-sm text-muted-foreground">
+          <div className="flex items-center space-x-1 text-muted-foreground text-sm">
             <span>Made with</span>
-            <Heart className="w-4 h-4 text-primary fill-primary" />
+            <Heart className="h-4 w-4 fill-primary text-primary" />
             <span>by Onlyface Team</span>
           </div>
         </div>
       </Container>
     </footer>
-  )
+  );
 }

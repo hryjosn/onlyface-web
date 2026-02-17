@@ -1,11 +1,11 @@
-import { cn } from "@/lib/utils"
-import * as React from "react"
-import { Container } from "./container"
+import type * as React from "react";
+import { cn } from "@/lib/utils";
+import { Container } from "./container";
 
 interface SectionTitleProps extends React.HTMLAttributes<HTMLDivElement> {
-  pretitle?: string
-  title: string
-  align?: "left" | "center"
+  align?: "left" | "center";
+  pretitle?: string;
+  title: string;
 }
 
 export function SectionTitle({
@@ -19,29 +19,29 @@ export function SectionTitle({
   return (
     <Container
       className={cn(
-        "flex w-full flex-col mt-4",
+        "mt-4 flex w-full flex-col",
         align === "center" ? "items-center justify-center text-center" : "",
         className
       )}
       {...props}
     >
       {pretitle && (
-        <div className="text-sm font-bold tracking-widest text-primary uppercase">
+        <div className="font-bold text-primary text-sm uppercase tracking-widest">
           {pretitle}
         </div>
       )}
 
       {title && (
-        <h2 className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-foreground lg:leading-tight lg:text-4xl">
+        <h2 className="mt-3 max-w-2xl font-bold text-3xl text-foreground leading-snug tracking-tight lg:text-4xl lg:leading-tight">
           {title}
         </h2>
       )}
 
       {children && (
-        <p className="max-w-2xl py-4 text-lg leading-normal text-muted-foreground lg:text-xl xl:text-xl">
+        <p className="max-w-2xl py-4 text-lg text-muted-foreground leading-normal lg:text-xl xl:text-xl">
           {children}
         </p>
       )}
     </Container>
-  )
+  );
 }

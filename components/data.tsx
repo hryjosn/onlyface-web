@@ -1,22 +1,11 @@
-import {
-  FaceSmileIcon,
-  ChartBarSquareIcon,
-  CursorArrowRaysIcon,
-  DevicePhoneMobileIcon,
-  AdjustmentsHorizontalIcon,
-  SunIcon,
-} from "@heroicons/react/24/solid";
-import homePicture1 from "../public/img/Home-picture1.png"
-import homePicture2 from "../public/img/Home-picture2.png"
-import homePicture3 from "../public/img/Home-picture3.png"
 import stepOneImg from "../public/img/deleteAccountStep/step1.png";
 import stepTwoImg from "../public/img/deleteAccountStep/step2.png";
 import stepThreeImg from "../public/img/deleteAccountStep/step3.png";
 import stepFourImg from "../public/img/deleteAccountStep/step4.png";
+
 // import chaoticgood from "../public/img/Chaotic-good.png"
 // import coffee from "../public/img/Coffee.png"
 // import feliz from "../public/img/Feliz.png"
-
 
 // const benefitOne = {
 //   title: "Member Approval System",
@@ -38,19 +27,18 @@ import stepFourImg from "../public/img/deleteAccountStep/step4.png";
 const homeContent1 = {
   title: "Member Approval System",
   desc: "Efficient Validation: Our Member Approval System simplifies the vetting process, enabling verified members to review and authorize new applicants, ensuring a trusted and secure community",
-  image: 'https://image.onlyface.app/approval_page.webp',
+  image: "https://image.onlyface.app/approval_page.webp",
 };
 
 const homeContent2 = {
   title: "Share Your Own Story",
   desc: "Narrate Your Experience: With 'Share Your Own Story,' you can craft and express your personal experiences, connecting with others through compelling narratives.",
-  image: 'https://image.onlyface.app/demo_1.webp',
-
+  image: "https://image.onlyface.app/demo_1.webp",
 };
 const homeContent3 = {
   title: "Selected Photo Network",
   desc: "Curate and Share: Our platform features a selected photo network, allowing users to showcase and discover exceptional images, fostering a vibrant community of visual storytelling and inspiration.",
-  image: 'https://image.onlyface.app/demo_2.webp',
+  image: "https://image.onlyface.app/demo_2.webp",
 };
 const benefitOne = {
   title: "Step 1",
@@ -74,4 +62,12 @@ const benefitFour = {
   image: stepFourImg,
 };
 
-export {homeContent1,homeContent2,homeContent3, benefitOne, benefitTwo, benefitThree, benefitFour };
+export {
+  homeContent1,
+  homeContent2,
+  homeContent3,
+  benefitOne,
+  benefitTwo,
+  benefitThree,
+  benefitFour,
+};

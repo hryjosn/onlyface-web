@@ -1,10 +1,9 @@
-import React from "react";
-import type { Metadata } from 'next';
-import { ContentLayout } from "../../components/ui/content-layout";
+import type { Metadata } from "next";
+import { ContentLayout } from "../../../components/ui/content-layout";
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy',
-  description: 'Privacy Policy for Onlyface.',
+  title: "Privacy Policy",
+  description: "Privacy Policy for Onlyface.",
 };
 
 const PrivacyPolicy = () => {
