@@ -21,33 +21,26 @@ const EULA = () => {
   return (
     <ContentLayout subtitle={t("lastUpdated")} title={t("title")}>
       <p>{t("intro")}</p>
-
       <h2>{t("licenseGrant")}</h2>
       <p>{t("licenseGrantDesc")}</p>
-
       <h2>{t("restrictions")}</h2>
       <p>{t("restrictionsIntro")}</p>
       <ul>
         <li>{t("restrict1")}</li>
         <li>{t("restrict2")}</li>
         <li>{t("restrict3")}</li>
+        <li>{t("restrict4")}</li>
       </ul>
-
       <h2>{t("property")}</h2>
       <p>{t("propertyDesc")}</p>
-
       <h2>{t("content")}</h2>
       <p>{t("contentDesc")}</p>
-
       <h2>{t("termination")}</h2>
       <p>{t("terminationDesc")}</p>
-
       <h2>{t("liability")}</h2>
       <p>{t("liabilityDesc")}</p>
-
       <h2>{t("law")}</h2>
       <p>{t("lawDesc")}</p>
-
       <h2>{t("contact")}</h2>
       <p>{t("contactDesc")}</p>
     </ContentLayout>
